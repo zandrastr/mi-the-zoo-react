@@ -85,7 +85,7 @@ export const OneAnimal = () => {
           <p>Född: {currentAnimal.yearOfBirth}</p>
           <p>Mediciner: {currentAnimal.medicine}</p>
           <div className={(currentAnimal.isFed ? 'greenFeedingStatus' : 'redFeedingStatus') + ' feedingInfo'}>
-            <p>Senast matad: {currentAnimal.lastFed}</p>
+            <p>Senast matad: {new Date(currentAnimal.lastFed).toLocaleString('sv-SE')}</p>
             <button className='feedBtn' disabled={currentAnimal.isFed} onClick={handleClick}>
               Mata djur
             </button>
