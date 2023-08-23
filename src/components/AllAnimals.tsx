@@ -41,13 +41,16 @@ export const AllAnimals = () => {
 
   return (
     <>
-      <h1>Alla djur</h1>
-      {animals.map((oneAnimal) => (
-        <div key={oneAnimal.id} onClick={() => handleClick(oneAnimal.id)}>
-          <h2>{oneAnimal.name}</h2>
-          <img src={oneAnimal.imageUrl} alt={oneAnimal.latinName} width='250' onError={handleImgError} />
-        </div>
-      ))}
+      <h1 className='pageTitle'>The Zoo</h1>
+      <div className='allAnimalsWrapper'>
+        {animals.map((oneAnimal) => (
+          <div className={(oneAnimal.isFed ? 'greenFeedingStatus' : 'redFeedingStatus') + ' oneAnimalWrapper'} key={oneAnimal.id} onClick={() => handleClick(oneAnimal.id)}>
+            <h2>{oneAnimal.name}</h2>
+            <p>{oneAnimal.shortDescription}</p>
+            <img src={oneAnimal.imageUrl} alt={oneAnimal.latinName} width='250' onError={handleImgError} />
+          </div>
+        ))}
+      </div>
     </>
   );
 };
