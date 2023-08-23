@@ -40,3 +40,61 @@
 .read-the-docs {
   color: #888;
 }
+
+
+
+.redFeedingStatus {
+  background-color: rgb(207, 139, 139);
+}
+
+.greenFeedingStatus {
+  background-color: rgb(142, 180, 131);
+}
+
+.allAnimalsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  gap: 20px;
+}
+
+.oneAnimalWrapper, .feedingInfo {
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.feedBtn {
+  background-color: rgb(37, 37, 202);
+  color: white;
+}
+
+.feedBtn:disabled {
+  background-color: rgb(184, 184, 184);
+  color: white;
+  border: none;
+}
+
+.pageTitle {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(22, 22, 194);
+  font-size: 5rem;
+}
+
+.animalInfoWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.goBackBtn {
+  background-color: rgb(27, 44, 199);
+  color: white;
+  margin: 15px;
+}
+
+img {
+  border-radius: 10px;
+  border: 3px solid gray;
+}
