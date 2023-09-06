@@ -1,29 +1,20 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/mzU6KDhq)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=11561666&assignment_repo_type=AssignmentRepo)
-# React + TypeScript + Vite
+# The Zoo 🦜🐈🐢🐟
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web application for a virtual zoo, showing a list of animals and keeping track of their feeding status.   
+Users can update the feeding status, which also updates the exact date and time of the last feeding.
 
-Currently, two official plugins are available:
+This is a school assignment with the goal of learning more about React and TypeScript.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### During the project I got to practice: 
+- Creation of a single page application (SPA)
+- React routes
+- API services
+- React hooks (for example useEffect and useState)
+- TypeScript 
+- JavaScript logic
+- The use of LocalStorage
+- Error handling
+- Git
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+#### 🔧 Tech Stack: 
+React | TypeScript | JavaScript | CSS | HTML 
