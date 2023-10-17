@@ -14,7 +14,7 @@ export const OneAnimal = () => {
   useEffect(() => {
     const dataInLocalStorage: string | null = localStorage.getItem('allAnimals');
 
-    if (dataInLocalStorage !== null && id) {
+    if (dataInLocalStorage !== null) {
       const dataInLocalStorageParsed: IAnimal[] = JSON.parse(dataInLocalStorage);
 
       const foundAnimalById = dataInLocalStorageParsed.find((animal) => animal.id === Number(id));
@@ -23,7 +23,7 @@ export const OneAnimal = () => {
         setCurrentAnimal(foundAnimalById);
       } else console.log('Error retrieving animal by ID.');
     }
-  }, []);
+  }, [id]);
 
   const handleClick = () => {
     console.log('Button to feed pressed.');
@@ -66,7 +66,7 @@ export const OneAnimal = () => {
 
   const handleImgError: ReactEventHandler<HTMLImageElement> = (event) => {
     const target = event.target as HTMLImageElement;
-    target.src = './images/no-image-available.jpg';
+    target.src = 'images/no-image-available.jpg';
   };
 
   const navigate = useNavigate();
