@@ -14,7 +14,7 @@ export const OneAnimal = () => {
   useEffect(() => {
     const dataInLocalStorage: string | null = localStorage.getItem('allAnimals');
 
-    if (dataInLocalStorage !== null) {
+    if (dataInLocalStorage !== null && id) {
       const dataInLocalStorageParsed: IAnimal[] = JSON.parse(dataInLocalStorage);
 
       const foundAnimalById = dataInLocalStorageParsed.find((animal) => animal.id === Number(id));
