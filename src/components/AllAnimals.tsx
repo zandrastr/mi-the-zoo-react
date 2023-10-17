@@ -32,7 +32,7 @@ export const AllAnimals = () => {
 
   const handleImgError: ReactEventHandler<HTMLImageElement> = (event) => {
     const target = event.target as HTMLImageElement;
-    target.src = './../images/no-image-available.jpg';
+    target.src = './../src/images/no-image-available.jpg';
   };
 
   const handleClick = (id: number) => {
