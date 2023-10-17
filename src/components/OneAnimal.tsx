@@ -23,7 +23,7 @@ export const OneAnimal = () => {
         setCurrentAnimal(foundAnimalById);
       } else console.log('Error retrieving animal by ID.');
     }
-  }, [id]);
+  }, []);
 
   const handleClick = () => {
     console.log('Button to feed pressed.');
